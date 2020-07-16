@@ -2,7 +2,6 @@ import React from 'react';
 import { Cards, Charts, CountryPicker } from './components'
 import styles from './App.module.css'
 import { fetchData } from './api'
-import { render } from '@testing-library/react';
 import image from './images/corona-banner.jpg'
 
 class App extends React.Component {
