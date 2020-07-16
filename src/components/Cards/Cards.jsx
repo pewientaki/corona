@@ -16,7 +16,7 @@ const Cards = ({ data: { updated, cases, todayCases, deaths, todayDeaths, recove
                 <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.infected)}>
                     <CardContent>
                         <Typography color='textSecondary' gutterBottom>
-                            Infected
+                            Cases
                         </Typography>
                         <Typography variant='h5' component='h2'>
                             <CountUp start={0} end={cases} duration={2.75} separator=","></CountUp>
