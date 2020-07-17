@@ -5,7 +5,8 @@
   "engines": {
     "npm": "6.14.4",
     "node": "v12.16.3",
-    "start": "node index.js",
+    "start": "npm run build && node ./build/bin/www",
+    "build": "npm run clean && npm run babel-build",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "dependencies": {
